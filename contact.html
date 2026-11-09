@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a><a href="menu.html">Menu</a>
+        <a href="about.html">About</a><a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions"><a href="cart.html" class="cart-btn">🛒 Cart <span id="cartCount">0</span></a><a href="login.html" class="login-btn">Sign In</a><a href="login.html" class="profile-icon" aria-label="Profile and sign in" title="Profile and sign in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg></a></div>
+</header>
+
+<section class="section contact-section">
+    <div class="section-heading">
+        <span class="eyebrow">WE ARE HERE FOR YOU</span>
+        <h2>Get in <span>Touch</span></h2>
+        <p>Have a question, suggestion or feedback? Send us a message.</p>
+    </div>
+
+    <div class="feature-grid" style="margin-bottom:45px">
+        <div class="feature-card"><span>📧</span><h3>Email Us</h3><p><a href="mailto:hello@foodiehub.com">hello@foodiehub.com</a></p></div>
+        <div class="feature-card"><span>📞</span><h3>Call Us</h3><p><a href="tel:+919876543210">+91 98765 43210</a></p></div>
+        <div class="feature-card"><span>📍</span><h3>Location</h3><p>India</p></div>
+        <div class="feature-card"><span>⏰</span><h3>Availability</h3><p>Website accessible anytime</p></div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Enter Your Email" required>
+        <input type="tel" placeholder="Phone Number (Optional)">
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="6" placeholder="Write Your Message..." required></textarea>
+        <button type="submit" class="primary-btn">Send Message →</button>
+    </form>
+</section>
+
+<section class="section contact-faq">
+    <div class="section-heading">
+        <span class="eyebrow">QUICK ANSWERS</span>
+        <h2>Before you <span>send us a note</span></h2>
+        <p>A few helpful details about this FoodieHub demo.</p>
+    </div>
+    <div class="faq-list">
+        <details class="faq-item">
+            <summary>Where can I see the dishes and prices?</summary>
+            <p>Visit the <a href="menu.html">menu page</a> to browse dishes, categories and listed prices.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Can I place a real order through this website?</summary>
+            <p>This project is a website demo. Checkout and contact forms do not send real orders or messages.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How can I share feedback?</summary>
+            <p>You can use the sample review form on the <a href="reviews.html">reviews page</a>. Review submissions are not saved yet.</p>
+        </details>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-highlight">
+        <div><span class="eyebrow">YOUR NEXT FAVOURITE MEAL IS WAITING</span><h2>Make today <span>delicious.</span></h2></div>
+        <a href="menu.html" class="primary-btn">Explore the Menu →</a>
+    </div>
+    <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a><p>Good food, great mood and happiness in every bite. Freshly made and delivered with love.</p><a class="footer-email" href="mailto:hello@foodiehub.com">hello@foodiehub.com</a></div>
+        <div><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Our Menu</a><a href="about.html">About Us</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+        <div><h3>Information</h3><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a></div>
+        <div><h3>Get in Touch</h3><a href="tel:+919876543210">+91 98765 43210</a><p>Serving food lovers across India.</p><a class="footer-contact-link" href="contact.html">We’d love to hear from you <span>→</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-current-year>2026</span> FoodieHub. Made with <span class="footer-heart">♥</span> for food lovers.</span><a href="#">Back to top ↑</a></div>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thank you for contacting FoodieHub! This is a demo form; no message has been sent.");
+    this.reset();
+});
+</script>
+<script src="site.js"></script>
+</body>
+</html>

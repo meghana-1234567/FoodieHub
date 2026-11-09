@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">🛒 Cart <span id="cartCount">0</span></a>
+        <a href="login.html" class="login-btn">Sign In</a>
+        <a href="login.html" class="profile-icon" aria-label="Profile and sign in" title="Profile and sign in">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg>
+        </a>
+    </div>
+</header>
+
+<section class="section menu-section">
+    <div class="section-heading">
+        <span class="eyebrow">EXPLORE OUR FOOD</span>
+        <h2>Our Delicious <span>Menu</span></h2>
+        <p>Discover your favourite dishes, freshly prepared with love.</p>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pizza">Pizza</button>
+        <button class="filter-btn" data-filter="burger">Burgers</button>
+        <button class="filter-btn" data-filter="pasta">Pasta</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+    </div>
+
+    <div class="food-grid">
+        <article class="food-card" data-category="pizza">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700" alt="Margherita Pizza"></div>
+            <div class="food-info"><h3>Margherita Pizza</h3><p>Classic cheese and tomato pizza.</p><div class="food-bottom"><strong>₹249</strong><button class="add-btn" data-name="Margherita Pizza" data-price="249">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="pizza">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=700" alt="Veggie Pizza"></div>
+            <div class="food-info"><h3>Veggie Pizza</h3><p>Fresh vegetables and melted cheese.</p><div class="food-bottom"><strong>₹299</strong><button class="add-btn" data-name="Veggie Pizza" data-price="299">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="pizza">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=700" alt="Pepperoni Pizza"></div>
+            <div class="food-info"><h3>Pepperoni Pizza</h3><p>Classic pizza topped with pepperoni and melted cheese.</p><div class="food-bottom"><strong>₹349</strong><button class="add-btn" data-name="Pepperoni Pizza" data-price="349">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="pizza">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700" alt="Four Cheese Pizza"></div>
+            <div class="food-info"><h3>Four Cheese Pizza</h3><p>A cheesy favourite with herbs and a golden crust.</p><div class="food-bottom"><strong>₹329</strong><button class="add-btn" data-name="Four Cheese Pizza" data-price="329">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="burger">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700" alt="Classic Burger"></div>
+            <div class="food-info"><h3>Classic Burger</h3><p>Juicy patty with fresh vegetables.</p><div class="food-bottom"><strong>₹179</strong><button class="add-btn" data-name="Classic Burger" data-price="179">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="burger">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700" alt="Cheese Burger"></div>
+            <div class="food-info"><h3>Cheese Burger</h3><p>Delicious burger with extra cheese.</p><div class="food-bottom"><strong>₹199</strong><button class="add-btn" data-name="Cheese Burger" data-price="199">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="burger">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1558030006-450675393462?w=700" alt="BBQ Burger"></div>
+            <div class="food-info"><h3>BBQ Burger</h3><p>Smoky barbecue flavours with a juicy grilled patty.</p><div class="food-bottom"><strong>₹229</strong><button class="add-btn" data-name="BBQ Burger" data-price="229">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="pasta">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700" alt="Creamy Pasta"></div>
+            <div class="food-info"><h3>Creamy Pasta</h3><p>Rich creamy sauce with herbs.</p><div class="food-bottom"><strong>₹219</strong><button class="add-btn" data-name="Creamy Pasta" data-price="219">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="pasta">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=700" alt="Italian Pasta"></div>
+            <div class="food-info"><h3>Italian Pasta</h3><p>Italian flavours with delicious spices.</p><div class="food-bottom"><strong>₹239</strong><button class="add-btn" data-name="Italian Pasta" data-price="239">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="pasta">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=700" alt="Pesto Pasta"></div>
+            <div class="food-info"><h3>Pesto Pasta</h3><p>Fresh basil pesto tossed with pasta and parmesan.</p><div class="food-bottom"><strong>₹259</strong><button class="add-btn" data-name="Pesto Pasta" data-price="259">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="dessert">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700" alt="Chocolate Cake"></div>
+            <div class="food-info"><h3>Chocolate Cake</h3><p>Rich chocolate with creamy frosting.</p><div class="food-bottom"><strong>₹149</strong><button class="add-btn" data-name="Chocolate Cake" data-price="149">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="dessert">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700" alt="Ice Cream"></div>
+            <div class="food-info"><h3>Ice Cream</h3><p>Delicious and refreshing scoops.</p><div class="food-bottom"><strong>₹99</strong><button class="add-btn" data-name="Ice Cream" data-price="99">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="dessert">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700" alt="Berry Cheesecake"></div>
+            <div class="food-info"><h3>Berry Cheesecake</h3><p>Creamy cheesecake finished with sweet berries.</p><div class="food-bottom"><strong>₹179</strong><button class="add-btn" data-name="Berry Cheesecake" data-price="179">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="dessert">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=700" alt="Chocolate Brownie"></div>
+            <div class="food-info"><h3>Chocolate Brownie</h3><p>Warm, fudgy chocolate brownie baked to perfection.</p><div class="food-bottom"><strong>₹129</strong><button class="add-btn" data-name="Chocolate Brownie" data-price="129">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="drinks">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=700" alt="Fresh Juice"></div>
+            <div class="food-info"><h3>Fresh Fruit Juice</h3><p>Refreshing seasonal fruit juice.</p><div class="food-bottom"><strong>₹89</strong><button class="add-btn" data-name="Fresh Fruit Juice" data-price="89">+ Add</button></div></div>
+        </article>
+
+        <article class="food-card" data-category="drinks">
+            <div class="food-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700" alt="Cold Coffee"></div>
+            <div class="food-info"><h3>Cold Coffee</h3><p>Chilled coffee with creamy milk.</p><div class="food-bottom"><strong>₹119</strong><button class="add-btn" data-name="Cold Coffee" data-price="119">+ Add</button></div></div>
+        </article>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-highlight">
+        <div><span class="eyebrow">YOUR NEXT FAVOURITE MEAL IS WAITING</span><h2>Make today <span>delicious.</span></h2></div>
+        <a href="menu.html" class="primary-btn">Explore the Menu →</a>
+    </div>
+    <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a><p>Good food, great mood and happiness in every bite. Freshly made and delivered with love.</p><a class="footer-email" href="mailto:hello@foodiehub.com">hello@foodiehub.com</a></div>
+        <div><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Our Menu</a><a href="about.html">About Us</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+        <div><h3>Information</h3><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a></div>
+        <div><h3>Get in Touch</h3><a href="tel:+919876543210">+91 98765 43210</a><p>Serving food lovers across India.</p><a class="footer-contact-link" href="contact.html">We’d love to hear from you <span>→</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-current-year>2026</span> FoodieHub. Made with <span class="footer-heart">♥</span> for food lovers.</span><a href="#">Back to top ↑</a></div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const toast = document.getElementById("toast");
+let timer;
+function message(text) {
+    toast.textContent = text;
+    toast.classList.add("show");
+    clearTimeout(timer);
+    timer = setTimeout(() => toast.classList.remove("show"), 2500);
+}
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem("foodiehubCart")) || []; } catch { cart = []; }
+function updateCount() {
+    document.getElementById("cartCount").textContent =
+        cart.reduce((sum, item) => sum + item.quantity, 0);
+}
+document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll(".food-card").forEach(card => {
+            card.classList.toggle("hide", btn.dataset.filter !== "all" && card.dataset.category !== btn.dataset.filter);
+        });
+    });
+});
+document.querySelectorAll(".add-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let item = cart.find(i => i.name === btn.dataset.name);
+        if (item) item.quantity++;
+        else cart.push({name: btn.dataset.name, price: Number(btn.dataset.price), quantity: 1});
+        localStorage.setItem("foodiehubCart", JSON.stringify(cart));
+        updateCount();
+        message(btn.dataset.name + " added to cart!");
+    });
+});
+updateCount();
+</script>
+<script src="site.js"></script>
+</body>
+</html>

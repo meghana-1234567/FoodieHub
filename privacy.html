@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .policy-content { max-width: 950px; margin: auto; }
+        .policy-card {
+            background: var(--card);
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        .policy-card h2 { color: var(--orange); font-size: 20px; margin-bottom: 12px; }
+        .policy-card p, .policy-card li { color: #bbb; font-size: 14px; line-height: 1.9; }
+        .policy-card ul { padding-left: 22px; }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a><a href="menu.html">Menu</a>
+        <a href="about.html">About</a><a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions"><a href="cart.html" class="cart-btn">🛒 Cart <span id="cartCount">0</span></a><a href="login.html" class="login-btn">Sign In</a><a href="login.html" class="profile-icon" aria-label="Profile and sign in" title="Profile and sign in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg></a></div>
+</header>
+
+<section class="section">
+    <div class="section-heading">
+        <span class="eyebrow">YOUR PRIVACY MATTERS</span>
+        <h2>Privacy <span>Policy</span></h2>
+        <p>Learn how FoodieHub handles information.</p>
+    </div>
+
+    <div class="policy-content">
+        <p style="color:var(--gray);margin-bottom:25px">Last updated: November 5, 2026</p>
+
+        <div class="policy-card">
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy describes how the FoodieHub demonstration website handles information when visitors browse and interact with its features.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>2. Information We May Collect</h2>
+            <p>Depending on the features enabled, information may include:</p>
+            <ul>
+                <li>Name, email address and a password hash when you register. Passwords are not stored in plain text.</li>
+                <li>Account sign-in state in a session cookie and the time of a successful login.</li>
+                <li>Food selections saved in your browser's local storage.</li>
+                <li>Contact and review form entries are not sent or stored by this demo.</li>
+            </ul>
+        </div>
+
+        <div class="policy-card">
+            <h2>3. How Information Is Used</h2>
+            <ul>
+                <li>To create accounts, verify sign-ins and maintain login sessions.</li>
+                <li>To display and maintain shopping cart selections.</li>
+            </ul>
+            <p>Contact and review form contents are not transmitted or stored because those demo forms do not submit data.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>4. Cookies and Local Storage</h2>
+            <p>The site uses browser local storage to remember cart items and a session cookie for account sign-in. Cart data can be cleared through browser settings; signing out clears the login session.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>5. Data Security</h2>
+            <p>When the Flask backend is running, registration details are stored in the configured SQLite or MySQL database, with passwords protected using a one-way hash. Login sessions use a cookie. This project is a local demo, not a production service; do not use a password you rely on elsewhere.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>6. Sharing of Information</h2>
+            <p>Account details are stored by the configured backend. Contact and review forms only display a demo confirmation and do not send or save their contents. Cart data remains in your browser. The demo does not process orders or payments, and no third-party form or payment service is configured.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>7. Your Privacy Rights</h2>
+            <p>Depending on applicable law, you may have rights to access, correct, delete or otherwise manage your personal information. Requests can be directed to the website administrator.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>8. Children's Privacy</h2>
+            <p>The website is not designed to knowingly collect personal information from children without appropriate authorization and safeguards.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>9. Policy Updates</h2>
+            <p>We may update this policy when the website or its data practices change. Changes will be published on this page.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2>10. Contact Us</h2>
+            <p>For privacy-related questions, email <a href="mailto:hello@foodiehub.com">hello@foodiehub.com</a>.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-highlight">
+        <div><span class="eyebrow">YOUR NEXT FAVOURITE MEAL IS WAITING</span><h2>Make today <span>delicious.</span></h2></div>
+        <a href="menu.html" class="primary-btn">Explore the Menu →</a>
+    </div>
+    <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a><p>Good food, great mood and happiness in every bite. Freshly made and delivered with love.</p><a class="footer-email" href="mailto:hello@foodiehub.com">hello@foodiehub.com</a></div>
+        <div><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Our Menu</a><a href="about.html">About Us</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+        <div><h3>Information</h3><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a></div>
+        <div><h3>Get in Touch</h3><a href="tel:+919876543210">+91 98765 43210</a><p>Serving food lovers across India.</p><a class="footer-contact-link" href="contact.html">We’d love to hear from you <span>→</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-current-year>2026</span> FoodieHub. Made with <span class="footer-heart">♥</span> for food lovers.</span><a href="#">Back to top ↑</a></div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

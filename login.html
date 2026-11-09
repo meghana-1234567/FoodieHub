@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register | FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-page {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 15px;
+            background: radial-gradient(circle at top right,#61240e55,transparent 45%);
+        }
+        .login-card {
+            background: var(--card);
+            border: 1px solid #444;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            border-radius: 22px;
+            box-shadow: 0 20px 60px #0008;
+        }
+        .login-card h1 {
+            text-align: center;
+            font-family: 'Playfair Display',serif;
+            margin: 15px 0 10px;
+        }
+        .login-card > p {
+            color: var(--gray);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+        .login-card form { display: grid; gap: 15px; }
+        .login-card input {
+            width: 100%;
+            background: #101010;
+            color: white;
+            border: 1px solid #444;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .login-card input:focus { outline: 1px solid var(--orange); }
+        .login-card .primary-btn { width: 100%; cursor: pointer; }
+        .login-switch {
+            text-align: center;
+            color: var(--gray);
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        .login-switch a { color: var(--orange); }
+        .form-hidden { display: none !important; }
+        .auth-message {
+            margin-top: 20px;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .auth-message:empty { display: none; }
+        .auth-message.success { color: #8fe1a2; }
+        .auth-message.error { color: #ff9186; }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a><a href="menu.html">Menu</a>
+        <a href="about.html">About</a><a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions"><a href="cart.html" class="cart-btn">🛒 Cart <span id="cartCount">0</span></a><a href="login.html" class="profile-icon" aria-label="Profile and sign in" title="Profile and sign in"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg></a></div>
+</header>
+
+<section class="login-page">
+    <div class="login-card">
+        <div class="auth-brand">🍴 FoodieHub</div>
+
+        <div id="loginSection">
+            <h1>Welcome <span style="color:var(--orange)">Back!</span></h1>
+            <p>Login to enjoy delicious food.</p>
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
+                <input type="password" name="password" placeholder="Password" autocomplete="current-password" minlength="8" required>
+                <button type="submit" class="primary-btn">Login Now →</button>
+            </form>
+            <div class="login-switch">Don't have an account? <a href="#" id="showRegister">Register here</a></div>
+        </div>
+
+        <div id="registerSection" class="form-hidden">
+            <h1>Create <span style="color:var(--orange)">Account</span></h1>
+            <p>Join FoodieHub and discover amazing food.</p>
+            <form id="registerForm">
+                <input type="text" name="name" placeholder="Full Name" autocomplete="name" maxlength="100" required>
+                <input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
+                <input type="password" name="password" placeholder="Create Password" autocomplete="new-password" minlength="8" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" autocomplete="new-password" minlength="8" required>
+                <button type="submit" class="primary-btn">Create Account →</button>
+            </form>
+            <div class="login-switch">Already registered? <a href="#" id="showLogin">Login here</a></div>
+        </div>
+
+        <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-highlight">
+        <div><span class="eyebrow">YOUR NEXT FAVOURITE MEAL IS WAITING</span><h2>Make today <span>delicious.</span></h2></div>
+        <a href="menu.html" class="primary-btn">Explore the Menu →</a>
+    </div>
+    <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo">🍴 Foodie<span>Hub</span></a><p>Good food, great mood and happiness in every bite. Freshly made and delivered with love.</p><a class="footer-email" href="mailto:hello@foodiehub.com">hello@foodiehub.com</a></div>
+        <div><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Our Menu</a><a href="about.html">About Us</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></div>
+        <div><h3>Information</h3><a href="terms.html">Terms & Conditions</a><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund Policy</a></div>
+        <div><h3>Get in Touch</h3><a href="tel:+919876543210">+91 98765 43210</a><p>Serving food lovers across India.</p><a class="footer-contact-link" href="contact.html">We’d love to hear from you <span>→</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-current-year>2026</span> FoodieHub. Made with <span class="footer-heart">♥</span> for food lovers.</span><a href="#">Back to top ↑</a></div>
+</footer>
+
+<script>
+const loginSection = document.getElementById("loginSection");
+const registerSection = document.getElementById("registerSection");
+
+document.getElementById("showRegister").addEventListener("click", e => {
+    e.preventDefault();
+    loginSection.classList.add("form-hidden");
+    registerSection.classList.remove("form-hidden");
+});
+
+document.getElementById("showLogin").addEventListener("click", e => {
+    e.preventDefault();
+    registerSection.classList.add("form-hidden");
+    loginSection.classList.remove("form-hidden");
+});
+
+const authMessage = document.getElementById("authMessage");
+function setAuthMessage(message, state) {
+    authMessage.textContent = message;
+    authMessage.className = `auth-message ${state}`;
+}
+
+const authApiBase = window.location.port === "5500" &&
+    ["localhost", "127.0.0.1"].includes(window.location.hostname)
+    ? "http://127.0.0.1:5000"
+    : "";
+
+async function submitAuthForm(event, endpoint, form, onSuccess) {
+    event.preventDefault();
+    setAuthMessage("", "");
+    const submitButton = form.querySelector("button[type='submit']");
+    submitButton.disabled = true;
+
+    try {
+        const response = await fetch(endpoint, {
+            method: "POST",
+            credentials: "include",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+        });
+        const result = await response.json();
+
+        if (!response.ok) throw new Error(result.error || "Authentication failed.");
+        onSuccess(result);
+    } catch (error) {
+        const message = error.message === "Invalid email or password."
+            ? "Invalid email or password. Passwords are case-sensitive; use the email and database you registered with."
+            : error.message || "Unable to connect to the server.";
+        setAuthMessage(message, "error");
+    } finally {
+        submitButton.disabled = false;
+    }
+}
+
+document.getElementById("registerForm").addEventListener("submit", event => {
+    const form = event.currentTarget;
+    const password = form.elements.password.value;
+    const confirmPassword = form.elements.confirm_password.value;
+
+    if (password !== confirmPassword) {
+        event.preventDefault();
+        setAuthMessage("Passwords do not match.", "error");
+        return;
+    }
+
+    submitAuthForm(event, `${authApiBase}/api/auth/register`, form, result => {
+        form.reset();
+        registerSection.classList.add("form-hidden");
+        loginSection.classList.remove("form-hidden");
+        document.querySelector("#loginForm [name='email']").value = result.user.email;
+        setAuthMessage(
+            "Registration successful! Your account has been saved. Sign in with your password.",
+            "success"
+        );
+    });
+});
+
+document.getElementById("loginForm").addEventListener("submit", event => {
+    const form = event.currentTarget;
+    submitAuthForm(event, `${authApiBase}/api/auth/login`, form, result => {
+        form.reset();
+        setAuthMessage(`Welcome back, ${result.user.name}!`, "success");
+        window.location.href = "index.html?welcome=1";
+    });
+});
+</script>
+<script src="site.js"></script>
+</body>
+</html>
