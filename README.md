@@ -29,6 +29,28 @@ GitHub repository: https://github.com/meghana-1234567/FoodieHub
 
 The app uses `instance/foodiehub.sqlite3` by default. To use MySQL instead, follow [MYSQL_SETUP.md](MYSQL_SETUP.md).
 
+## Check the database while the backend is running
+
+The default setup uses SQLite. You can inspect it from a second PowerShell terminal while Flask keeps running:
+
+1. Leave the terminal running `python app.py` open.
+2. Open a second terminal in VS Code (**Terminal > New Terminal**) or open another PowerShell window.
+3. Go to the project folder:
+
+   ```powershell
+   cd "C:\Users\Dell\OneDrive\Desktop\foodiehub"
+   ```
+
+4. Run this command to print the SQLite database path and registered accounts:
+
+   ```powershell
+   python -c "import sqlite3; c=sqlite3.connect('instance/foodiehub.sqlite3'); print('Database:', c.execute('PRAGMA database_list').fetchone()[2]); print('Registered users:'); [print(row) for row in c.execute('SELECT id, name, email, created_at, last_login_at FROM users ORDER BY id DESC')]; c.close()"
+   ```
+
+   Each row shows the account ID, name, email, registration time, and most recent login time. Passwords and password hashes are intentionally not displayed. The app creates the `users` table when Flask starts; register an account on the website to add a row.
+
+If you started Flask with `MYSQL_DATABASE` set, it is using MySQL instead of this SQLite file. In that case, inspect the `foodiehub.users` table in MySQL Workbench using the instructions in [MYSQL_SETUP.md](MYSQL_SETUP.md).
+
 ## Connect this project to GitHub
 
 These steps are for an existing local project folder. Run them in PowerShell from the project directory.
